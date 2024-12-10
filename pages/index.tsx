@@ -4,7 +4,7 @@ export default function Home() {
     const [message, setMessage] = useState('');
     
     const sendMessage = async () => {
-        const response = await fetch('/api/message', {
+        const response = await fetch('http://localhost:4000/api/message', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
